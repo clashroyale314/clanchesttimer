@@ -4,13 +4,15 @@
         <title>Test</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
-        function codeAddress() {
-            alert('ok');
+        function setCurrentCrowns() {
+            var crowns = document.getElementById("crowns");
+            crowns.innerHTML = "hello!";
         }
         
         </script>
     </head>
-    <body onload="codeAddress();">
-    
+    <body onload="setCurrentCrowns();">
+    <div id="crowns">
+        </div>
     </body>
 </html>
