@@ -6,13 +6,18 @@
         <script type="text/javascript">
         function setCurrentCrowns() {
             var crowns = document.getElementById("crowns");
-            crowns.innerHTML = "hello!";
+
+            var d = new Date();
+            var n = d.getTime();
+            console.log(n);
+            var x = (n - 1482121099*1000)*3250/(86400000*7);
+            crowns.innerHTML = Math.round(x);
         }
         
         </script>
     </head>
     <body onload="setCurrentCrowns();">
-    <div id="crowns">
-        </div>
+    <h1 id="crowns">
+        </h1>
     </body>
 </html>
