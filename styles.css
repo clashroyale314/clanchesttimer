@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper {
+  padding-top: 20%;
+  background: linear-gradient(-25deg, #249132, #31c4bc);
+  height: 100%;
+  width: 100%;
+}
+
+#word {
+  display: inline-block;
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+  transform: skewY(15deg);
+  animation: 0.7s wordAnim 1;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+#word span {
+  color: transparent;
+  display: inline-block;
+  position: relative;
+  font-family: "Monoton";
+  animation: 3s letterAnim infinite;
+}
+#word span.l0 {
+  animation-delay: 0s;
+}
+#word span.l1 {
+  animation-delay: 0.375s;
+}
+#word span.l2 {
+  animation-delay: 0.75s;
+}
+#word span.l3 {
+  animation-delay: 1.125s;
+}
+#word span.l4 {
+  animation-delay: 1.5s;
+}
+#word span.l5 {
+  animation-delay: 1.875s;
+}
+#word span.l6 {
+  animation-delay: 2.25s;
+}
+#word span.l7 {
+  animation-delay: 2.625s;
+}
+
+@keyframes wordAnim {
+  0% {
+    transform: rotateY(55deg) skewY(5deg);
+  }
+  50% {
+    transform: rotateY(45deg) skewY(20deg);
+  }
+  100% {
+    transform: skewY(-5deg);
+  }
+}
+@keyframes letterAnim {
+  0% {
+    color: #267976;
+  }
+  25% {
+    color: #5d431b;
+  }
+  50% {
+    color: #696447;
+  }
+  75% {
+    color: #ba23a2;
+  }
+  100% {
+    color: #75e488;
+  }
+}
